@@ -22,10 +22,9 @@ Um conversor de moedas simples e responsivo com temas claro/escuro, desenvolvido
 - HTML5 semântico
 - CSS3 (Flexbox, CSS Variables, media queries)
 - JavaScript vanilla (DOM, Fetch API, eventos)
-- [ExchangeRate-API](https://www.exchangerate-api.com/) (API gratuita)
 
 ## 🚀 Como Executar
 
 1. Clone o repositório:
    ```bash
-   git clone: https://github.com/SEU-USUARIO/currency-converter.git
+   git clone: https://davidjubino.github.io/currency-converter/
