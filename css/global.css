@@ -1,0 +1,82 @@
+
+/* =========================================
+   GLOBAL.CSS | Estilos globais e variáveis
+============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis CSS */
+
+:root {
+    /* Font */
+    --font-family-base: 'Inter', system-ui, sans-serif;
+
+    /* Font Size */
+    --font-xs: 0.75rem;  /* Extra Small */
+    --font-sm: 0.875rem; /* Small */
+    --font-md: 1rem;    /* Medium */
+    --font-lg: 1.125rem; /* Large */
+    --font-xl: 1.25rem;  /* Extra Large */
+
+    /* Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    /* Spacing */
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+
+    /* Transition */
+    --transition-default: 0.3s ease;
+}
+
+/* Base do Documento */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family-base);
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+label {
+    font-size: var(--font-sm);
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+    display: block;
+}
+
+/* Inputs e botões base */
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: var(--font-md);
+    border: none;
+    outline: none;
+}
+
+/* Botão */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utilidades */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,87 @@
+/* ============================================
+   COMPONENTS.CSS | Inputs, selects e botões
+=============================================== */
+
+/* INPUT GROUP */
+.input-group,
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+/* INPUT & SELECT */
+input,
+select {
+  width: 100%;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  transition: border var(--transition-default),
+              background-color var(--transition-default);
+}
+
+input::placeholder {
+  color: var(--text-secondary);
+}
+
+/* FOCUS */
+input:focus,
+select:focus {
+  border-color: var(--color-primary);
+}
+
+/* BOTÃO SWAP */
+.swap-button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: var(--font-lg);
+  transition: background-color var(--transition-default),
+              transform var(--transition-default);
+}
+
+.swap-button:hover {
+  background-color: var(--bg-card);
+  transform: rotate(180deg);
+}
+
+/* BOTÃO CONVERTER */
+.convert-button {
+  padding: 14px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-weight: 600;
+  transition: opacity var(--transition-default),
+              transform var(--transition-default);
+}
+
+.convert-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* RESULTADO */
+.result {
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  text-align: center;
+  font-weight: 500;
+  min-height: 48px;
+}
+
+/* TOGGLE THEME */
+.theme-toggle {
+  display: flex;
+  gap: var(--space-xs);
+  font-size: var(--font-md);
+}

@@ -1,0 +1,41 @@
+/* ================================
+   THEME.CSS | Light & Dark Mode
+=================================== */
+
+/* DARK MODE (padrão) */
+body {
+    --bg-primary: #0b0f1a;
+    --bg-secondary: #11162a;
+    --bg-card: #151a35;
+
+    --color-primary: #4f6df5;
+    --color-secondary: #7c8cff;
+
+    --text-primary: #ffffff;
+    --text-secondary: #a1a6c3;
+
+    --border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* LIGHT MODE */
+body.light {
+    --bg-primary: #f4f6fb;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+
+    --color-primary: #3f5efb;
+    --color-secondary: #6b7cff;
+
+    --text-primary: #1a1a1a;
+    --text-secondary: #5f6368;
+
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Aplicação global */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color var(--transition-default),
+                color var(--transition-default);
+}

@@ -1,0 +1,24 @@
+# ESTRUTRA DA APLICAÇÃO
+
+currency-converter/
+│
+├── index.html          → Estrutura da aplicação
+├── README.md           → Documentação do projeto
+│
+├── assets/             → Recursos estáticos
+│   ├── icons/          → Ícones
+│
+├── css/
+|   ├── global.css       → reset, variáveis, tipografia, base
+|   ├── theme.css        → light / dark
+|   ├── components.css   → inputs, selects, botões
+|   ├── layout.css       → header, container, card
+|   ├── import.css       → arquivo central de importação
+│
+├── js/
+│   ├── data.js         → Dados das moedas (taxas fixas inicialmente)
+│   ├── dom.js          → Seleção e manipulação do DOM
+│   ├── converter.js    → Lógica de conversão
+│   └── theme.js        → Controle do tema (light/dark)
+│
+└── .gitignore

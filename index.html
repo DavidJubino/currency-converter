@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- IMPORTANDO FONTES DO GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+
+    <!-- IMPORTANDO ARQUIVOS CSS -->
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <!-- HEADER - TÍTULO & BUTTON LIGHT/DARK -->
+    <header class="header">
+        <h1 class="title-h1">
+            <span class="back-arrow">←</span> Conversor de Moedas
+        </h1>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema claro/escuro">
+            <span class="theme-sun">☀️</span>
+            <span class="theme-moon">🌙</span>
+        </button>
+    </header>
+
+    <main class="container-main">
+        <section class="section-card">
+            <form id="convert-form" class="convert-form">
+                <div class="input-group">
+                    <label for="amount">Valor</label>
+                    <input 
+                        type="number" 
+                        id="amount" 
+                        name="amount" 
+                        placeholder="Ex: 100"
+                        aria-label="Valor a converter" 
+                        required 
+                        min="0" 
+                        step="0.01" 
+                        value="1"
+                    >
+                </div>
+
+                <!-- Agrupamento correto dos selects + swap para facilitar CSS flex -->
+                <div class="currencies-group">
+                    <div class="select-wrapper">
+                        <label for="from-currency">DE</label>
+                        <select name="from-currency" id="from-currency" required>
+                            <option value="USD">USD - Dólar Americano</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="BRL" selected>BRL - Real Brasileiro</option>
+                            <option value="AOA">AOA - Kwanza Angolano</option>
+                            <option value="GBP">GBP - Libra Esterlina</option>
+                            <option value="JPY">JPY - Iene Japonês</option>
+                        </select>
+                    </div>
+
+                    <button type="button" id="swap-button" class="swap-button" aria-label="Trocar moedas">
+                        ⇄
+                    </button>
+
+                    <div class="select-wrapper">
+                        <label for="to-currency">PARA</label>
+                        <select name="to-currency" id="to-currency" required>
+                            <option value="USD">USD - Dólar Americano</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="BRL">BRL - Real Brasileiro</option>
+                            <option value="AOA" selected>AOA - Kwanza Angolano</option>
+                            <option value="GBP">GBP - Libra Esterlina</option>
+                            <option value="JPY">JPY - Iene Japonês</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="convert-button">
+                    Converter
+                </button>
+            </form>
+
+            <div class="result" id="result" role="alert" aria-live="polite">
+                <!-- RESULTADO DA CONVERSÃO APARECE AQUI -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
